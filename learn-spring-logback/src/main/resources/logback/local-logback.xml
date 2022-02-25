@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration >
+    <include resource="org/springframework/boot/logging/logback/base.xml"/>
+
+    <springProperty scope="context" name="appName" source="spring.application.name" defaultValue="defaultAppName"/>
+    <!-- 文件输出格式 -->
+    <property name="PATTERN" value="%date [%thread] %-5level %logger{80} - %msg%n"/>
+    <!-- 文件路径 -->
+    <property name="logPath" value="/var/logs"/>
+
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>${PATTERN}</pattern>
+        </encoder>
+    </appender>
+
+    <logger level="debug" name="com.sun.mail">
+        <appender-ref ref="CONSOLE"/>
+    </logger>
+    <logger level="debug" additivity="false" name="com.example">
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="FILE"/>
+    </logger>
+    <root level="info">
+        <appender-ref ref="FILE"/>
+    </root>
+</configuration>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <include resource="org/springframework/boot/logging/logback/base.xml"/>
+
+    <springProperty scope="context" name="appName" source="spring.application.name" defaultValue="defaultAppName"/>
+    <!-- 文件输出格式 -->
+    <property name="PATTERN" value="%date [%thread] %-5level %logger{80} - %msg%n"/>
+    <!-- 文件路径 -->
+    <property name="logPath" value="/data/logs"/>
+
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>${PATTERN}</pattern>
+        </encoder>
+    </appender>
+
+    <!-- 每天产生一个文件 -->
+    <appender name="FILE"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <!-- 文件路径 -->
+        <file>${logPath}/${appName}/out.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <!-- 文件名称 -->
+            <fileNamePattern>${logPath}/${appName}/out.%d{yyyy-MM-dd}.%i.log
+            </fileNamePattern>
+            <!-- 文件最大保存历史数量 -->
+            <maxHistory>10</maxHistory>
+            <maxFileSize>100MB</maxFileSize>
+            <totalSizeCap>1GB</totalSizeCap>
+        </rollingPolicy>
+
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <pattern>${PATTERN}</pattern>
+        </layout>
+    </appender>
+
+    <!-- 开发环境 -->
+    <logger level="debug" name="com.sun.mail">
+        <appender-ref ref="FILE"/>
+    </logger>
+    <logger level="debug" additivity="false" name="com.example">
+        <appender-ref ref="FILE"/>
+    </logger>
+    <root level="info">
+        <appender-ref ref="FILE"/>
+    </root>
+</configuration>

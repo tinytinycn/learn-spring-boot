@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/learn-spring-boot.iml" filepath="$PROJECT_DIR$/learn-spring-boot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/learn-spring-logback/learn-spring-logback.iml" filepath="$PROJECT_DIR$/learn-spring-logback/learn-spring-logback.iml" />
     </modules>
   </component>
 </project>
