@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/learn-spring-boot.iml" filepath="$PROJECT_DIR$/learn-spring-boot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/learn-spring-gateway-swagger3/learn-spring-gateway-swagger3.iml" filepath="$PROJECT_DIR$/learn-spring-gateway-swagger3/learn-spring-gateway-swagger3.iml" />
       <module fileurl="file://$PROJECT_DIR$/learn-spring-logback/learn-spring-logback.iml" filepath="$PROJECT_DIR$/learn-spring-logback/learn-spring-logback.iml" />
+      <module fileurl="file://$PROJECT_DIR$/learn-spring-swagger3/learn-spring-swagger3.iml" filepath="$PROJECT_DIR$/learn-spring-swagger3/learn-spring-swagger3.iml" />
     </modules>
   </component>
 </project>
