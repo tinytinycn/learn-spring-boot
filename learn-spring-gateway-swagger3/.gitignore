@@ -1,4 +1,3 @@
-7-spring-cloud-gateway-swagger3.md
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
