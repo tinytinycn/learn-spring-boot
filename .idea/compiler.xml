@@ -7,15 +7,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="learn-spring-swagger3" />
         <module name="learn-spring-logback" />
         <module name="learn-spring-gateway-swagger3" />
+        <module name="user-center" />
+        <module name="tiny-gateway" />
+        <module name="learn-spring-swagger3" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="learn-spring-doc" target="1.8" />
       <module name="learn-spring-gateway-swagger3" target="1.8" />
       <module name="learn-spring-logback" target="1.8" />
       <module name="learn-spring-swagger3" target="1.8" />
+      <module name="tiny-gateway" target="1.8" />
+      <module name="user-center" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -23,6 +28,8 @@
       <module name="learn-spring-gateway-swagger3" options="-parameters" />
       <module name="learn-spring-logback" options="-parameters" />
       <module name="learn-spring-swagger3" options="-parameters" />
+      <module name="tiny-gateway" options="" />
+      <module name="user-center" options="" />
     </option>
   </component>
 </project>

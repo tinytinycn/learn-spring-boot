@@ -18,3 +18,4 @@
 
 - [springboot 集成 swagger 3.0](learn-spring-swagger3/6-spring-swagger.md)
 - [spring cloud gateway 集成 swagger 3.0](learn-spring-gateway-swagger3/7-spring-cloud-gateway-swagger3.md)
+- [spring 微服务集成 springdoc](8-spring-doc.md)

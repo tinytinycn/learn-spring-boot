@@ -6,6 +6,9 @@
         <option value="$PROJECT_DIR$/learn-spring-logback/pom.xml" />
         <option value="$PROJECT_DIR$/learn-spring-swagger3/pom.xml" />
         <option value="$PROJECT_DIR$/learn-spring-gateway-swagger3/pom.xml" />
+        <option value="$PROJECT_DIR$/learn-spring-doc/pom.xml" />
+        <option value="$PROJECT_DIR$/learn-spring-doc/tiny-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/learn-spring-doc/user-center/pom.xml" />
       </list>
     </option>
   </component>
