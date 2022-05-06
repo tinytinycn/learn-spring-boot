@@ -53,3 +53,9 @@
 
 
 ![idea-plugin-code-check](img/idea-plugin-code-check.png)
+
+
+## 参考
+
+- [alibaba-p3c](https://github.com/alibaba/p3c/tree/master/idea-plugin)
+- [maven中集成pmd、checkstyle](https://www.jianshu.com/p/557b975ae40d)
