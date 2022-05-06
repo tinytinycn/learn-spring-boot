@@ -19,3 +19,7 @@
 - [springboot 集成 swagger 3.0](learn-spring-swagger3/6-spring-swagger.md)
 - [spring cloud gateway 集成 swagger 3.0](learn-spring-gateway-swagger3/7-spring-cloud-gateway-swagger3.md)
 - [spring 微服务集成 springdoc](8-spring-doc.md)
+
+## 代码规范
+
+- [maven项目集成p3c-pmd代码规范插件](9-maven-p3c-pmd-plugin.md)
