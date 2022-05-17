@@ -1,3 +1,7 @@
+# jenkins 在自动化运维的定位
+
+![jenkins-starter](img/jenkins-starter.png)
+
 # docker安装jenkins
 
 1. DockerHub 获取镜像 [jenkins/jenkins ]([jenkins/jenkins - Docker Image | Docker Hub](https://hub.docker.com/r/jenkins/jenkins)) 并安装、启动容器
